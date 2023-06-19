@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>CustomerData</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>customer</servlet-name>
+  <servlet-class>de.zeroco.servlets.InsertController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>customer</servlet-name>
+  <url-pattern>/customer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>view</servlet-name>
+  <servlet-class>de.zeroco.servlets.View</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>view</servlet-name>
+  <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>detail</servlet-name>
+  <servlet-class>de.zeroco.servlets.ListController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>detail</servlet-name>
+  <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>update</servlet-name>
+  <servlet-class>de.zeroco.servlets.UpdateController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>update</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>delete</servlet-name>
+  <servlet-class>de.zeroco.servlets.DeleteController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>delete</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>get</servlet-name>
+  <servlet-class>de.zeroco.servlets.GetController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>get</servlet-name>
+  <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
